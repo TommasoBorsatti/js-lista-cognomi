@@ -23,7 +23,7 @@ do {
 } while ( !isNaN ( cognomeUtente ) );
 
 
-//2. Definisco un Array Cognome con all'interno alcuni cognomi di default:
+//2. Definisco un Array cognomi con all'interno alcuni cognomi di default:
 
 var cognomi = [ "Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi" ];
 
@@ -50,6 +50,6 @@ for (var i = 0; i < cognomi.length; i++ ){
   //6. Inserisco delle istruzioni che permettano di mostrare con un messaggio la posizione umana di ciascun cognome all'interno della lista:
 
   console.log( cognomi[i]  + " è il " + (i + 1) + " ° nome della lista dei cognomi");
-  document.getElementById('lista').innerHTML = "<li>" + cognomi[i] " è il " + (i + 1) + " ° nome della lista dei cognomi" + "</li>"
+  document.getElementById('lista').innerHTML += "<li><em>" + cognomi[i] + " è il " + (i + 1) + " ° nome della lista dei cognomi" + "</em></li>"
 
 }
